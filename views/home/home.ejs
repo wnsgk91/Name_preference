@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../header.ejs %>
+  </head>
+  <body>
+    <div style="text-align: center; margin-left: 25%">
+
+      <div class="select-name" style="width: 50%; text-align: center;">
+        <div class="dropdown1" style="float: left; width: 50%">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 70%">
+            성을 선택해주세요
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">정</button>
+            <button class="dropdown-item" type="button">성</button>
+            <button class="dropdown-item" type="button">이</button>
+            <button class="dropdown-item" type="button">홍</button>
+          </div>
+        </div>
+
+        <div class="dropdown2" style="float: right; width: 50%">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 70%"">
+            이름을 선택해주세요
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button">상헌</button>
+            <button class="dropdown-item" type="button">창규</button>
+            <button class="dropdown-item" type="button">준하</button>
+            <button class="dropdown-item" type="button">준기</button>
+          </div>
+        </div>
+      </div>
+
+      </br>
+      </br>
+      </br>
+
+      <div class="result" style="width: 50%">
+        <button type="button" class="btn btn-secondary btn-lg btn-block" onclick = "location.href = '/result' ">결과보기</button>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+

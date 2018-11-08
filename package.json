@@ -1,0 +1,25 @@
+{
+  "name": "sad",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "csv": "^4.0.0",
+    "deasync": "^0.1.13",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.1",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "korean-sentiment-analyzer": "0.0.1",
+    "lodash": "^4.17.11",
+    "ls": "^0.2.1",
+    "moment": "^2.22.2",
+    "morgan": "~1.9.0",
+    "regexp.escape": "^1.0.2",
+    "supervisor": "^0.12.0"
+  }
+}
