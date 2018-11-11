@@ -4,43 +4,67 @@
     <% include ../header.ejs %>
   </head>
   <body>
-    <div style="text-align: center; margin-left: 25%">
 
+    <div style="text-align: center; margin-left: 33%">
       <div class="select-name" style="width: 50%; text-align: center;">
-        <div class="dropdown1" style="float: left; width: 50%">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 70%">
-            성을 선택해주세요
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">정</button>
-            <button class="dropdown-item" type="button">성</button>
-            <button class="dropdown-item" type="button">이</button>
-            <button class="dropdown-item" type="button">홍</button>
-          </div>
-        </div>
 
-        <div class="dropdown2" style="float: right; width: 50%">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 70%"">
-            이름을 선택해주세요
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">상헌</button>
-            <button class="dropdown-item" type="button">창규</button>
-            <button class="dropdown-item" type="button">준하</button>
-            <button class="dropdown-item" type="button">준기</button>
-          </div>
-        </div>
+        <form class="form" id="name_form" action="/result" method="get"> 
+            <div class="dropdown1" style="float: left; width: 50%">
+              <select class="ui dropdown" id="l_name" onchange="input_name()">
+                <option value="">성을 선택해주세요.</option>
+                <option value="정">정</option>
+                <option value="성">성</option>
+                <option value="홍">홍</option>
+                <option value="이">이</option>
+              </select>
+            </div>
+
+            <div class="dropdown2" style="float: right; width: 50%">
+              <select class="ui dropdown" id="f_name" onchange="input_name()">
+                <option value="">이름을 선택해주세요.</option>
+                <option value="상헌">상헌</option>
+                <option value="창규">창규</option>
+                <option value="준기">준기</option>
+                <option value="준하">준하</option>
+              </select>
+            </div>
+
+            </br>
+            </br>
+            </br>
+
+            <div class="ui big label">
+                선택한 이름
+            </div>
+
+            </br>
+            </br>
+
+            <div class="ui input">
+              <input type="text" name="name" id="name" >
+            </div>
+            
+            <script>
+              function input_name(){
+                var x = document.getElementById("f_name").value;
+                var y = document.getElementById("l_name").value;
+                var z = document.getElementById("name");
+                z.value = y + x;
+              }
+            </script>
+            
+            </br>
+            </br>
+              <button class="ui right labeled icon button" onclick="location.href = '/result'" type="submit">
+              <i class="right arrow icon"></i>
+              결과 확인하기
+              </button>
+
+        </form> 
       </div>
+    </div>           
 
-      </br>
-      </br>
-      </br>
-
-      <div class="result" style="width: 50%">
-        <button type="button" class="btn btn-secondary btn-lg btn-block" onclick = "location.href = '/result' ">결과보기</button>
-      </div>
-
-    </div>
+  <script>$('.ui.dropdown').dropdown();</script>
 
   </body>
 </html>

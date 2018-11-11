@@ -1,8 +1,8 @@
 rm(list=ls(all=TRUE))
-library(Hmisc) # list.tree
-library(rlist) # list.map
-library(rjson)
-library(ggplot2)
+library("Hmisc") # list.tree
+library("rlist") # list.map
+library("rjson")
+library("ggplot2")
 
 calc.percentage <- function (data) {
     length = length(data)
@@ -33,6 +33,12 @@ calc.count <- function (data) {
     return(list(tweets = length(data), retweets = retweets, favorites = favorites))
 }
 
+calc.count(b)
+
+a[1]
+b = gen.dataset(a)
+b[[11]]$polarity
+
 
 gen.dataset <- function (file.jsons) {
     ret = list()
@@ -46,31 +52,55 @@ gen.dataset <- function (file.jsons) {
     return(ret)
 }
 
+gen.dataset(file.list) 
+
 load.json <- function (file.names) {
     ret = list()
     for (file.name in file.names) {
-        json = load.jsonFile(file.name)
+        json <- fromJSON(file =file.name)
+        json
         tmp = list(date=file.name, data=json)
         ret = list.append(ret, tmp)
     }
     return(ret)
 }
-file.list = system("ls ./results | sed 's/\\.json//g'", intern = TRUE)
+
+file.list = system("ls /Users/junha_lee/Documents/Project/sad/sentiment/result | sed 's/\\.json//g'", intern = TRUE)
+
+file.list2 = paste("/Users/junha_lee/Documents/Project/sad/sentiment/result/",file.list,".json")
+file.list2
+file.list3 <- gsub(" ", "", file.list2)
+file.list3
+
+
+a = load.json(file.list3)
+
+a
+
+plot.sentiment(b)
+ggplot.sentiment(b)
+
+
+b[[1]]
+
+plot.sentiment(b)
 plot.sentiment <- function (dataset) {
     names = unlist(list.map(dataset, return(date)))
     names = c(1:length(dataset))
+    length(names)
     pos = unlist(list.map(dataset, return(polarity$pos)))
     neg = unlist(list.map(dataset, return(polarity$neg)))
-    neut = unlist(list.map(dataset, return(polarity$neut)))
+    neut = unlist(list.map(b, return(polarity$neut)))
     plot(x=names, y=0.5, ylim=c(0:1), type="l", col="blue")
     lines(pos, type="l", col="blue")
     lines(neg, type="l", col="red")
     lines(neut, type="l", col="gray")
 }
+
 ggplot.sentiment <- function (dataset) {
     # 감성그래프
-    names = as.Date(unlist(list.map(dataset, return(data))))
-    pos = unlist(list.map(dataset, return(polarity$pos)))
+  names = as.Date(file.list)
+  pos = unlist(list.map(dataset, return(polarity$pos)))
     neg = unlist(list.map(dataset, return(polarity$neg)))
     neut = unlist(list.map(dataset, return(polarity$neut)))
     df = data.frame(
@@ -88,7 +118,7 @@ ggplot.sentiment <- function (dataset) {
     color.neut = "green"
     size.dot = 0
     gp = ggplot(df, aes(x, middle)) ## + geom_line()
-    gp + ylim(0, 0.5) +
+    gp + ylim(0, 1) +
         geom_point(aes(x, pos), color = color.pos, size = size.dot) + geom_line(aes(x, pos), color = color.pos) +
         geom_point(aes(x, neg), color = color.neg, size = size.dot) + geom_line(aes(x, neg), color = color.neg) +
         geom_point(aes(x, neut), color = color.neut, size = size.dot) + geom_line(aes(x, neut), color = color.neut) +
@@ -97,9 +127,13 @@ ggplot.sentiment <- function (dataset) {
         ## theme(axis.text.x = element_blank(),
     ##       axis.ticks = element_blank())
 }
+
+ggplot.sentiment(b)
+
 ggplot.tweets <- function (dataset) {
     # 트윗 수 그래프
-    names = as.Date(unlist(list.map(dataset, return(data))))
+    names = as.Date(file.list)
+    #names = as.Date(unlist(list.map(dataset, return(data))))
     tw = unlist(list.map(dataset, return(tweets)))
     rt = unlist(list.map(dataset, return(retweets)))
     ## fv = unlist(list.map(dataset, return(favorites)))
@@ -125,9 +159,12 @@ ggplot.tweets <- function (dataset) {
     ## theme(axis.text.x = element_blank(),
     ##       axis.ticks = element_blank())
 }
+
+ggplot.tweets(b)
+
 ggplot.issue <- function (dataset) {
-    names = as.Date(unlist(list.map(dataset, return(data))))
-    tw = unlist(list.map(dataset, return(tweets)))
+  names = as.Date(file.list)
+  tw = unlist(list.map(dataset, return(tweets)))
     rt = unlist(list.map(dataset, return(retweets)))
     ## fv = unlist(list.map(dataset, return(favorites)))
     pos = unlist(list.map(dataset, return(polarity$pos)))
@@ -159,6 +196,9 @@ ggplot.issue <- function (dataset) {
         ## theme(axis.text.x = element_blank(),
         ##       axis.ticks = element_blank())
 }
+
+ggplot.issue(b)
+
 ggplot.slope <- function (dataset) {
     # 트윗 수 변화량 그래프
     names = as.Date(unlist(list.map(dataset, return(data))))
@@ -192,4 +232,4 @@ ggplot.slope <- function (dataset) {
         ##       axis.ticks = element_blank())
 }
 
-ggplot.sentiment(dataset)
+ggplot.sentiment(b)

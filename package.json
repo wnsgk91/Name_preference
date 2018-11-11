@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cookie-parser": "~1.4.3",
     "csv": "^4.0.0",
     "deasync": "^0.1.13",
@@ -14,12 +15,17 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
+    "jquery": "^3.3.1",
     "korean-sentiment-analyzer": "0.0.1",
     "lodash": "^4.17.11",
     "ls": "^0.2.1",
     "moment": "^2.22.2",
     "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "nodeQuery": "0.0.9-1",
     "regexp.escape": "^1.0.2",
+    "semantic": "0.0.1",
+    "semantic-ui": "^2.4.2",
     "supervisor": "^0.12.0"
   }
 }
