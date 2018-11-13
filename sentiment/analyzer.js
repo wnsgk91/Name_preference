@@ -189,7 +189,6 @@ if (argv.length < 8) {
 	console.log(process.argv[2]);
 	process.exit(1);
 	//console.log("2");
-
 }
 console.log("2");
 dataDir = argv[6];

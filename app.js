@@ -29,13 +29,21 @@ app.listen(5000, function() {
   	console.log('Connected');
 });
 
+
+
 app.get('/', function(req,res){
   	res.render('header');
 });
 
+
+
 app.get('/home', function(req,res){
  	res.render('home/home');
 });
+
+
+
+
 
 app.get(['/result',"'/result?name="], function(req, res){
 

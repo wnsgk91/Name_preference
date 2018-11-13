@@ -4,6 +4,18 @@ library("rlist") # list.map
 library("rjson")
 library("ggplot2")
 
+
+file.list = system("ls /Users/junha_lee/Documents/Project/sad/sentiment/result | sed 's/\\.json//g'", intern = TRUE)
+##file.list = system("ls "+args[6]+" | sed 's/\\.json//g'", intern = TRUE)
+file.list
+file.list2 = paste("/Users/junha_lee/Documents/Project/sad/sentiment/result/",file.list,".json")
+file.list2
+file.list3 <- gsub(" ", "", file.list2)
+file.list3
+
+
+
+
 calc.percentage <- function (data) {
     length = length(data)
     names = names(data[[1]])
@@ -33,11 +45,7 @@ calc.count <- function (data) {
     return(list(tweets = length(data), retweets = retweets, favorites = favorites))
 }
 
-calc.count(b)
 
-a[1]
-b = gen.dataset(a)
-b[[11]]$polarity
 
 
 gen.dataset <- function (file.jsons) {
@@ -52,7 +60,6 @@ gen.dataset <- function (file.jsons) {
     return(ret)
 }
 
-gen.dataset(file.list) 
 
 load.json <- function (file.names) {
     ret = list()
@@ -64,24 +71,7 @@ load.json <- function (file.names) {
     }
     return(ret)
 }
-
-file.list = system("ls /Users/junha_lee/Documents/Project/sad/sentiment/result | sed 's/\\.json//g'", intern = TRUE)
-
-file.list2 = paste("/Users/junha_lee/Documents/Project/sad/sentiment/result/",file.list,".json")
-file.list2
-file.list3 <- gsub(" ", "", file.list2)
-file.list3
-
-
-a = load.json(file.list3)
-
-a
-
-plot.sentiment(b)
-ggplot.sentiment(b)
-
-
-b[[1]]
+args = commandArgs()
 
 plot.sentiment(b)
 plot.sentiment <- function (dataset) {
@@ -128,7 +118,6 @@ ggplot.sentiment <- function (dataset) {
     ##       axis.ticks = element_blank())
 }
 
-ggplot.sentiment(b)
 
 ggplot.tweets <- function (dataset) {
     # 트윗 수 그래프
@@ -160,7 +149,6 @@ ggplot.tweets <- function (dataset) {
     ##       axis.ticks = element_blank())
 }
 
-ggplot.tweets(b)
 
 ggplot.issue <- function (dataset) {
   names = as.Date(file.list)
@@ -197,7 +185,6 @@ ggplot.issue <- function (dataset) {
         ##       axis.ticks = element_blank())
 }
 
-ggplot.issue(b)
 
 ggplot.slope <- function (dataset) {
     # 트윗 수 변화량 그래프
@@ -232,4 +219,9 @@ ggplot.slope <- function (dataset) {
         ##       axis.ticks = element_blank())
 }
 
+a = load.json(file.list3)
+b = gen.dataset(a)
+
+ggplot.issue(b)
+ggplot.tweets(b)
 ggplot.sentiment(b)
