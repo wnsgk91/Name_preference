@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var app = express();
-var jquery = require('jquery');
+
 
 // ejs 사용
 app.set('view engine', 'ejs');
@@ -15,7 +15,6 @@ var con = mysql.createConnection({
  user: 'root',
  password: 'dlwnsgk94', //변경
  database : 'sad' //변경
-
  });
 
 con.connect();
@@ -24,26 +23,17 @@ var staticResource = path.join(__dirname, '/public');
 app.use(express.static(staticResource));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
 app.listen(5000, function() {
   	console.log('Connected');
 });
-
-
 
 app.get('/', function(req,res){
   	res.render('header');
 });
 
-
-
 app.get('/home', function(req,res){
  	res.render('home/home');
 });
-
-
-
-
 
 app.get(['/result',"'/result?name="], function(req, res){
 
