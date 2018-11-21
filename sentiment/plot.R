@@ -73,7 +73,6 @@ load.json <- function (file.names) {
 }
 args = commandArgs()
 
-plot.sentiment(b)
 plot.sentiment <- function (dataset) {
     names = unlist(list.map(dataset, return(date)))
     names = c(1:length(dataset))
@@ -225,3 +224,4 @@ b = gen.dataset(a)
 ggplot.issue(b)
 ggplot.tweets(b)
 ggplot.sentiment(b)
+dev.print(png,'graph.png',width=100)

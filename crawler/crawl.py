@@ -31,7 +31,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, 
 #트윗 크롤링을 날짜 기준으로 저장합니다.
 def get_tweets(keyword, num_limit):
     i=0
-    for tweet in tweepy.Cursor(api.search, q=keyword, since='2018-11-02', until='2018-11-03',lang="ko").items(num_limit):
+    for tweet in tweepy.Cursor(api.search, q=keyword, since='2018-11-01', until='2018-11-14',lang="ko").items(num_limit):
         if (not tweet.retweeted) and ('RT @' not in tweet.text):
             StatusObject = tweet._json
             dict1 = {
