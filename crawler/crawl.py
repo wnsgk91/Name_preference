@@ -31,38 +31,41 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True, 
 #트윗 크롤링을 날짜 기준으로 저장합니다.
 def get_tweets(keyword, num_limit):
     i=0
-    for tweet in tweepy.Cursor(api.search, q=keyword, since='2018-11-01', until='2018-11-14',lang="ko").items(num_limit):
-        if (not tweet.retweeted) and ('RT @' not in tweet.text):
-            StatusObject = tweet._json
-            dict1 = {
-                    'id': StatusObject['id_str'],
-                    'permalink':"",
-                    'username':StatusObject['user']['name'],
-                    'text': StatusObject['text'],
-                    'date':StatusObject['created_at'],
-                    'retweets': StatusObject['retweet_count'],
-                    'favorites': StatusObject['favorite_count'],
-                    'mentions':StatusObject['entities']['user_mentions'],
-                    'hashtags':StatusObject['entities']['hashtags'],
-                    'geo':StatusObject['geo']
-                    }
-            print(str(i)+':'+str(dict1))
-            
-            ####날짜 형태 변환하기####
-            unformatted = StatusObject['created_at']
-            # Use re to get rid of the milliseconds.
-            remove_ms = lambda x:re.sub("\+\d+\s","",x)
-            # Make the string into a datetime object.
-            mk_dt = lambda x:datetime.strptime(remove_ms(x), "%a %b %d %H:%M:%S %Y")
-            # Format your datetime object.
-            my_form = lambda x:"{:%Y-%m-%d}".format(mk_dt(x))
-            formatted = my_form(unformatted)
-            #print(formatted)
-            ####날짜 형태 변환하기####
-            with open("/Users/junha_lee/Documents/Project/sad/sentiment/tmp_twitter/{}.json".format(str(formatted)),'a+',encoding="utf-8") as make_file:
-                twitter = json.dumps(dict1, ensure_ascii=False, indent=2)
-                make_file.write(twitter+',')
-        i+=1
+    for tweet in tweepy.Cursor(api.search, q=keyword, since='2018-11-01', until='2018-12-10',lang="ko").items(num_limit):
+        StatusObject = tweet._json
+        dict1 = {
+                'id': StatusObject['id_str'],
+                'permalink':"",
+                'username':StatusObject['user']['name'],
+                'text': StatusObject['text'],
+                'date':StatusObject['created_at'],
+                'retweets': StatusObject['retweet_count'],
+                'favorites': StatusObject['favorite_count'],
+                'mentions':StatusObject['entities']['user_mentions'],
+                'hashtags':StatusObject['entities']['hashtags'],
+                'geo':StatusObject['geo']
+                }
+        ##print(str(i)+':'+str(dict1))
+        
+        ####날짜 형태 변환하기####
+        unformatted = StatusObject['created_at']
+        # Use re to get rid of the milliseconds.
+        remove_ms = lambda x:re.sub("\+\d+\s","",x)
+        # Make the string into a datetime object.
+        mk_dt = lambda x:datetime.strptime(remove_ms(x), "%a %b %d %H:%M:%S %Y")
+        # Format your datetime object.
+        my_form = lambda x:"{:%Y-%m-%d}".format(mk_dt(x))
+        formatted = my_form(unformatted)
+        #print(formatted)
+        ####날짜 형태 변환하기####
+        dirname = "/Users/junha_lee/Documents/Junha/School/Projects/SentimentName/sentiment/tmp_twitter/"+keyword
+        if not os.path.isdir("/Users/junha_lee/Documents/Junha/School/Projects/SentimentName/sentiment/tmp_twitter/"+keyword):
+            os.mkdir("/Users/junha_lee/Documents/Junha/School/Projects/SentimentName/sentiment/tmp_twitter/"+keyword)
+    
+        with open("/Users/junha_lee/Documents/Junha/School/Projects/SentimentName/sentiment/tmp_twitter/"+keyword+"/{}.json".format(str(formatted)),'a+',encoding="utf-8") as make_file:
+            twitter = json.dumps(dict1, ensure_ascii=False, indent=2)
+            make_file.write(twitter+',')
+    i+=1
             
 #크롤링 대상을 명시합니다.
 def crawl():

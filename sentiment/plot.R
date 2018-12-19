@@ -5,10 +5,10 @@ library("rjson")
 library("ggplot2")
 
 
-file.list = system("ls /Users/junha_lee/Documents/Project/sad/sentiment/result | sed 's/\\.json//g'", intern = TRUE)
+file.list = system("ls /Users/junha_lee/Documents/Junha/School/Projects/SentimentName/sentiment/result | sed 's/\\.json//g'", intern = TRUE)
 ##file.list = system("ls "+args[6]+" | sed 's/\\.json//g'", intern = TRUE)
 file.list
-file.list2 = paste("/Users/junha_lee/Documents/Project/sad/sentiment/result/",file.list,".json")
+file.list2 = paste("/Users/junha_lee/Documents/Junha/School/Projects/SentimentName/sentiment/result/",file.list,".json")
 file.list2
 file.list3 <- gsub(" ", "", file.list2)
 file.list3
@@ -221,7 +221,5 @@ ggplot.slope <- function (dataset) {
 a = load.json(file.list3)
 b = gen.dataset(a)
 
-ggplot.issue(b)
-ggplot.tweets(b)
 ggplot.sentiment(b)
-dev.print(png,'graph.png',width=100)
+##dev.print(png,'/Users/junha_lee/Desktop/graph.png',width=100)

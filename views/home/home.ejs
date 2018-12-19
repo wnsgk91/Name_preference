@@ -12,16 +12,31 @@
             <div class="dropdown1" style="float: left; width: 50%">
               <select class="ui dropdown" id="l_name" onchange="input_name()">
                 <option value="">성을 선택해주세요.</option>
-                <option value="아">아</option>
-                <option value="양">양</option>
+                <option value="김">김</option>
+                <option value="이">이</option>
+                <option value="박">박</option>
+                <option value="최">최</option>
+                <option value="정">정</option>
+                <option value="강">강</option>
+                <option value="권">권</option>
+                <option value="윤">윤</option>
               </select>
             </div>
 
             <div class="dropdown2" style="float: right; width: 50%">
               <select class="ui dropdown" id="f_name" onchange="input_name()">
                 <option value="">이름을 선택해주세요.</option>
-                <option value="이린">이린</option>
-                <option value="진호">진호</option>
+                <option value="민준">민준</option>
+                <option value="서준">서준</option>
+                <option value="예준">예준</option>
+                <option value="도윤">도윤</option>
+                <option value="주원">주원</option>
+
+                <option value="서연">서연</option>
+                <option value="서윤">서윤</option>
+                <option value="서현">서현</option>
+                <option value="지우">지우</option>
+                <option value="민서">민서</option>
               </select>
             </div>
 
@@ -46,14 +61,71 @@
                 var y = document.getElementById("l_name").value;
                 var z = document.getElementById("name");
                 z.value = y + x;
+                 
+                switch(z.value){
+
+                  case "김서윤": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "이서연": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "이민서": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "박예준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "박도윤": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "박서윤": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "박서현": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "최서준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "최예준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "최도윤": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "최주원": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "정민준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "정서준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "정예준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "정주원": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "정서연": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "정서윤": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "정민서": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "강민준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "강예준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "강주원": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "강서윤": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "강서현": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "윤서준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "윤예준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "윤주원": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "윤서현": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "윤지우": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "윤민서": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+
+                  case "권민준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권서준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권예준": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권도윤": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권주원": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권서연": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권서현": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권서윤": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권지우": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");break;
+                  case "권민서": alert("이 이름에 대해서는 충분한 데이터를 가지고 있지 않아 결과를 제공할 수 없습니다.");
+
+
+
+
+                }  
+
               }
+            </script>
+
+            <script>
+              
+              var z = document.getElementById("name").value;
+
+             
+
             </script>
             
             </br>
+
             </br>
-              <button class="ui right labeled icon button" 
-                onclick="location.href = '/result'" type="submit">
-              <i class="right arrow icon"></i>
+              <button class="ui right labeled icon button" onclick="check()" type="submit">              
+                <i class="right arrow icon"></i>
               결과 확인하기
               </button>
 

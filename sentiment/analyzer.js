@@ -159,7 +159,7 @@ function analyzeSync (fileNames, hostname, port) {
 					console.log(`[${fileName}]: Occured error at point: ${tdPointer}, portLimit: ${portLimit}. exit`);
 					process.exit(1);
 				}
-				port += 1;
+				//port += 1;
 				console.log(`[${fileName}]: Occured error at point: ${tdPointer}`);
 			}
 		}
@@ -186,23 +186,14 @@ Example
 let argv = process.argv;
 if (argv.length < 8) {
 	console.log(helpText);
-	console.log(process.argv[2]);
 	process.exit(1);
-	//console.log("2");
 }
-console.log("2");
 dataDir = argv[6];
-console.log("3");
-
 resultDir = argv[7];
-//console.log("3");
-
 [dataDir, resultDir].forEach(dir => {
 	if (!fs.lstatSync(dir).isDirectory()) {
 		console.log(helpText);
 		throw new Error(`Directory is not exist('${dir}').`);
 	}
 });
-console.log("4");
-
 main(argv[2], argv[3], argv[4], argv[5]);

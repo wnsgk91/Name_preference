@@ -7,11 +7,80 @@
     
     <div style="text-align: center;">
       <div> 
-          <h1><span class="badge badge-secondary"><%= name[0].name %></span></h1>          
+          <h1>
+
+            <span class="badge badge-secondary"><%= name[0].name %></span></h1> 
+            <br>
+
+           <a style="font-size:150%"><%= name[0].name.substring(1,3) %></a>
+           <a> (이)라는 이름은 보통 &nbsp&nbsp </a>
+
+           <input style="font-size:150%; width: 45px" id="sex">
+              
+              <script>
+                
+                var s = document.getElementById("sex");
+
+                switch('<%= name[0].name.substring(1,3) %>'){
+                  case "민준" : s.value = "남자"; break;
+                  case "서준" : s.value = "남자"; break;
+                  case "예준" : s.value = "남자"; break;
+                  case "도윤" : s.value = "남자"; break;
+                  case "주원" : s.value = "남자"; break;
+
+                  case "서연" : s.value = "여자"; break;
+                  case "서윤" : s.value = "여자"; break;
+                  case "서현" : s.value = "여자"; break;
+                  case "지우" : s.value = "여자"; break;
+                  case "민서" : s.value = "여자"; break;
+                }
+                
+              </script>
+
+           </input> 
+
+           <a>에게 인기있는 이름이에요</a>
+
+           <br>
+           <br>
+
+           <a style="font-size: 150%">"<%= name[0].name.substring(0,1) %>"</a>
+           <a> 이라는 성을 가진 이름 BEST3</a>
+
+           <br>
+           <br>
+
+          <input style="font-size: 200%; width:100px; text-align:center;" id="first">       </input></h1>
+           <input style="font-size: 200%; width:100px; text-align:center;" id="second">       </input></h1>
+           <input style="font-size: 200%; width:100px; text-align:center;" id="third">       </input></h1>
+
+          <script>
+            
+            var one = document.getElementById("first");
+            var two = document.getElementById("second");
+            var three = document.getElementById("third");
+
+
+            switch('<%= name[0].name.substring(0,1) %>'){
+              case "김" : one.value = "김서현"; second.value = "김서연"; third.value="김지우"; break;
+              case "이" : one.value = "이민준"; second.value = "이서준"; third.value="이서현"; break;
+              case "박" : one.value = "박서준"; second.value = "박주원"; third.value="박민준"; break;
+              case "최" : one.value = "최서연"; second.value = "최서현"; third.value="최지우"; break;
+              case "정" : one.value = "정서현"; second.value = "정도윤"; third.value="정지우"; break;
+              case "강" : one.value = "강민서"; second.value = "강서준"; third.value="강도윤"; break;
+              case "권" : one.value = "-"; second.value = "-"; third.value="-"; break;
+              case "윤" : one.value = "윤도윤"; second.value = "윤민준"; third.value="윤서연"; break;
+            }
+
+          </script>
+
+
+
+
       </div>
 
           <br>
-          <a href="https://google.com" class="ui huge rounded image">
+          <a class="ui huge rounded image">
             <img src="<%= name[0].img %>" width="100%">
           </a>
     </br>

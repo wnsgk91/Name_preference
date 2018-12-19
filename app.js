@@ -52,4 +52,9 @@ app.get(['/result',"'/result?name="], function(req, res){
 			res.render('result/result',{name:names});
 		}
 	})
+
+
+
+
+
 })
