@@ -1,0 +1,100 @@
+[{
+  "id": "1073635718633648128",
+  "permalink": "",
+  "username": "이열희",
+  "text": "최지우와 결별로 이 악물었다 '반격 준비'",
+  "date": "Fri Dec 14 17:47:57 +0000 2018",
+  "retweets": 0,
+  "favorites": 0,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073617848390406145",
+  "permalink": "",
+  "username": "p o n o k",
+  "text": "@moonpa42 저 진짜 최지우인줄 알았어요...제가 본 어떤 매체에서도 지우의 성을 언급한것은 없었기에••••",
+  "date": "Fri Dec 14 16:36:56 +0000 2018",
+  "retweets": 0,
+  "favorites": 1,
+  "mentions": [
+    {
+      "screen_name": "moonpa42",
+      "name": "[文波] 이과생은 시험기간에 놀아요",
+      "id": 852564546,
+      "id_str": "852564546",
+      "indices": [
+        0,
+        9
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073517420634005505",
+  "permalink": "",
+  "username": "p o n o k",
+  "text": "RT @_binamagic_: @: 지우 한지우였음?? 여태 최지우인줄\n님아\nㅋ\nㅋ\nㅋㅋㅋ https://t.co/5VlyKDtRxw",
+  "date": "Fri Dec 14 09:57:52 +0000 2018",
+  "retweets": 6,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "_binamagic_",
+      "name": "비남",
+      "id": 936320279168540672,
+      "id_str": "936320279168540672",
+      "indices": [
+        3,
+        15
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073517359522996224",
+  "permalink": "",
+  "username": "p o n o k",
+  "text": "RT @Ponok_: ㅁㅊ지우 한지우였음?? 여태 최지우인줄",
+  "date": "Fri Dec 14 09:57:38 +0000 2018",
+  "retweets": 3,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "Ponok_",
+      "name": "p o n o k",
+      "id": 937711477888229376,
+      "id_str": "937711477888229376",
+      "indices": [
+        3,
+        10
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073475906557988864",
+  "permalink": "",
+  "username": "♥앨라스♥",
+  "text": "@YOOYEONSEOKcom 혹시 최지우 배우님 옆에 게시는  남자분 누군지 알수 있을까요?",
+  "date": "Fri Dec 14 07:12:54 +0000 2018",
+  "retweets": 0,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "YOOYEONSEOKcom",
+      "name": "유연석닷컴",
+      "id": 2379380186,
+      "id_str": "2379380186",
+      "indices": [
+        0,
+        15
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+}]

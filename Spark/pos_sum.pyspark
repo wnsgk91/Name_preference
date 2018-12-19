@@ -1,0 +1,7 @@
+rdd = sc.textFile("/sentiment/result.txt/*")
+pos_sum = rdd.map(lambda line:line.split(",")[4])\
+		.map(lambda line:line.split("="))\
+		.map(lambda x: (x[0], x[1]))\
+		.map(lambda (v1, v2): (v1, float(v2.split("))")[0])))\
+		.reduceByKey(lambda v1,v2: v1+v2)
+

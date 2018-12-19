@@ -1,0 +1,45 @@
+[{
+  "id": "1071755051494821889",
+  "permalink": "",
+  "username": "주여라(~412)",
+  "text": "이도윤이랑 하설 색은 비슷한데 왜 저렇게 반대야...?",
+  "date": "Sun Dec 09 13:14:51 +0000 2018",
+  "retweets": 0,
+  "favorites": 5,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1071738130565292032",
+  "permalink": "",
+  "username": "마지막 시험 카피페",
+  "text": "그래서?\n\n-이도윤-",
+  "date": "Sun Dec 09 12:07:36 +0000 2018",
+  "retweets": 0,
+  "favorites": 0,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1071721061631152133",
+  "permalink": "",
+  "username": "sunny suh",
+  "text": "RT @leehayng39: 이도윤 우끼지 마라\n\n이언주 의원 말 틀린게 뮈가 있나?",
+  "date": "Sun Dec 09 10:59:47 +0000 2018",
+  "retweets": 2,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "leehayng39",
+      "name": "인문학Minerva (인문학=종북 마피아들 국민을  독재 체제의 혈세노예화 세뇌  선동책",
+      "id": 3139758258,
+      "id_str": "3139758258",
+      "indices": [
+        3,
+        14
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+}]

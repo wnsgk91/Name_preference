@@ -1,0 +1,98 @@
+[{
+  "id": "1072994337846321153",
+  "permalink": "",
+  "username": "김희우",
+  "text": "2. 나 이제 진짜 너 아님 안 되겠다 김서준 https://t.co/6Nip54Wq8D",
+  "date": "Wed Dec 12 23:19:20 +0000 2018",
+  "retweets": 0,
+  "favorites": 1,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1072837140453580800",
+  "permalink": "",
+  "username": "김서준",
+  "text": "RT @SB_0706: @Only__SB 김서준이 너무 좋아서 미치겠고 이제 김서준 아님 암 것도 못 할 듯 아니 듯 아니고 못 함",
+  "date": "Wed Dec 12 12:54:41 +0000 2018",
+  "retweets": 1,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "SB_0706",
+      "name": "김희우",
+      "id": 1011903048422076421,
+      "id_str": "1011903048422076421",
+      "indices": [
+        3,
+        11
+      ]
+    },
+    {
+      "screen_name": "Only__SB",
+      "name": "김서준",
+      "id": 1071341165889253376,
+      "id_str": "1071341165889253376",
+      "indices": [
+        13,
+        22
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1072835488073936896",
+  "permalink": "",
+  "username": "김서준",
+  "text": "RT @SB_0706: 🖤존잘 김서준 자랑타래🖤\n@Only__SB 18. 12. 11 ~ ing https://t.co/ttjbPSttjC",
+  "date": "Wed Dec 12 12:48:07 +0000 2018",
+  "retweets": 1,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "SB_0706",
+      "name": "김희우",
+      "id": 1011903048422076421,
+      "id_str": "1011903048422076421",
+      "indices": [
+        3,
+        11
+      ]
+    },
+    {
+      "screen_name": "Only__SB",
+      "name": "김서준",
+      "id": 1071341165889253376,
+      "id_str": "1071341165889253376",
+      "indices": [
+        27,
+        36
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1072834248145481728",
+  "permalink": "",
+  "username": "김희우",
+  "text": "🖤존잘 김서준 자랑타래🖤\n@Only__SB 18. 12. 11 ~ ing https://t.co/ttjbPSttjC",
+  "date": "Wed Dec 12 12:43:11 +0000 2018",
+  "retweets": 1,
+  "favorites": 13,
+  "mentions": [
+    {
+      "screen_name": "Only__SB",
+      "name": "김서준",
+      "id": 1071341165889253376,
+      "id_str": "1071341165889253376",
+      "indices": [
+        14,
+        23
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+}]

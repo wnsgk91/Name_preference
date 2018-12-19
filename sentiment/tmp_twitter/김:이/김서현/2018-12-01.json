@@ -1,0 +1,99 @@
+[{
+  "id": "1068815307769176065",
+  "permalink": "",
+  "username": "천명 대사봇",
+  "text": "\"만노군 태수 김서현에게 나를 데려가라. 태수가 나를 증명할 것이다.\"",
+  "date": "Sat Dec 01 10:33:21 +0000 2018",
+  "retweets": 0,
+  "favorites": 0,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1068807968320176128",
+  "permalink": "",
+  "username": "미유",
+  "text": "@naturalflav0r 김서현",
+  "date": "Sat Dec 01 10:04:11 +0000 2018",
+  "retweets": 0,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "naturalflav0r",
+      "name": "굣테",
+      "id": 980264096208642048,
+      "id_str": "980264096208642048",
+      "indices": [
+        0,
+        14
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1068801373993496576",
+  "permalink": "",
+  "username": "교태",
+  "text": "RT @for_young0112: @naturalflav0r 너가김서현이야?",
+  "date": "Sat Dec 01 09:37:59 +0000 2018",
+  "retweets": 1,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "for_young0112",
+      "name": "🐰",
+      "id": 1056190301696491520,
+      "id_str": "1056190301696491520",
+      "indices": [
+        3,
+        17
+      ]
+    },
+    {
+      "screen_name": "naturalflav0r",
+      "name": "교태",
+      "id": 980264096208642048,
+      "id_str": "980264096208642048",
+      "indices": [
+        19,
+        33
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1068800592665960448",
+  "permalink": "",
+  "username": "참깨",
+  "text": "@naturalflav0r 너가김서현이야?",
+  "date": "Sat Dec 01 09:34:53 +0000 2018",
+  "retweets": 1,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "naturalflav0r",
+      "name": "교태",
+      "id": 980264096208642048,
+      "id_str": "980264096208642048",
+      "indices": [
+        0,
+        14
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1068782102886285317",
+  "permalink": "",
+  "username": "나무꾼",
+  "text": "아니김서현이그렸네",
+  "date": "Sat Dec 01 08:21:24 +0000 2018",
+  "retweets": 0,
+  "favorites": 1,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+}]

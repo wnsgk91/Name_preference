@@ -1,0 +1,121 @@
+[{
+  "id": "1073603692912209920",
+  "permalink": "",
+  "username": "🤖스승🤖",
+  "text": "김이박최서연민서지민아 입금잊지말자..",
+  "date": "Fri Dec 14 15:40:41 +0000 2018",
+  "retweets": 0,
+  "favorites": 0,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073571846618963968",
+  "permalink": "",
+  "username": "공주",
+  "text": "@Bh1448 @uni_hwawol 최서연 포카 잘 잃어버려",
+  "date": "Fri Dec 14 13:34:08 +0000 2018",
+  "retweets": 0,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "Bh1448",
+      "name": "조진",
+      "id": 1069582326940676096,
+      "id_str": "1069582326940676096",
+      "indices": [
+        0,
+        7
+      ]
+    },
+    {
+      "screen_name": "uni_hwawol",
+      "name": "아이 엠 화월인데 다쥬밈 나 사랑해 ?",
+      "id": 1021027277377683457,
+      "id_str": "1021027277377683457",
+      "indices": [
+        8,
+        19
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073505847366508544",
+  "permalink": "",
+  "username": "젶",
+  "text": "RT @hatehero_data: 불의 악마 '단테'의 이름을 거꾸로 하면 얼음의 악마 '에트나드'가 됩니다.(Dante-&gt;Etnad) (최서연님 제보)",
+  "date": "Fri Dec 14 09:11:53 +0000 2018",
+  "retweets": 3,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "hatehero_data",
+      "name": "이영싫정보봇",
+      "id": 700598996,
+      "id_str": "700598996",
+      "indices": [
+        3,
+        17
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073500820644085760",
+  "permalink": "",
+  "username": "라블",
+  "text": "RT @hatehero_data: 불의 악마 '단테'의 이름을 거꾸로 하면 얼음의 악마 '에트나드'가 됩니다.(Dante-&gt;Etnad) (최서연님 제보)",
+  "date": "Fri Dec 14 08:51:54 +0000 2018",
+  "retweets": 3,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "hatehero_data",
+      "name": "이영싫정보봇",
+      "id": 700598996,
+      "id_str": "700598996",
+      "indices": [
+        3,
+        17
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073499780783849472",
+  "permalink": "",
+  "username": "사개",
+  "text": "RT @hatehero_data: 불의 악마 '단테'의 이름을 거꾸로 하면 얼음의 악마 '에트나드'가 됩니다.(Dante-&gt;Etnad) (최서연님 제보)",
+  "date": "Fri Dec 14 08:47:47 +0000 2018",
+  "retweets": 3,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "hatehero_data",
+      "name": "이영싫정보봇",
+      "id": 700598996,
+      "id_str": "700598996",
+      "indices": [
+        3,
+        17
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1073499730422857728",
+  "permalink": "",
+  "username": "이영싫정보봇",
+  "text": "불의 악마 '단테'의 이름을 거꾸로 하면 얼음의 악마 '에트나드'가 됩니다.(Dante-&gt;Etnad) (최서연님 제보)",
+  "date": "Fri Dec 14 08:47:35 +0000 2018",
+  "retweets": 3,
+  "favorites": 9,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+}]

@@ -1,0 +1,33 @@
+[{
+  "id": "1074326220152557569",
+  "permalink": "",
+  "username": "주하나",
+  "text": "RT @Gilbutjw: 20181215 안재욱 빌리, 뮤지컬 시카고  성남 공연후 퇴근길(안재욱, 박칼린, 김지우, 김영주, 김서준, 차정현) https://t.co/iivV6R1IBt @YouTube 님이 공유",
+  "date": "Sun Dec 16 15:31:45 +0000 2018",
+  "retweets": 4,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "Gilbutjw",
+      "name": "Enem/안재욱월드",
+      "id": 185616342,
+      "id_str": "185616342",
+      "indices": [
+        3,
+        12
+      ]
+    },
+    {
+      "screen_name": "YouTube",
+      "name": "YouTube",
+      "id": 10228272,
+      "id_str": "10228272",
+      "indices": [
+        105,
+        113
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+}]

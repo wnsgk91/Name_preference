@@ -1,0 +1,3 @@
+df = sqlContext.read.json("/sentiment/*")
+df2 = df.select("polarity")
+df2.coalesce(1).rdd.saveAsTextFile("/sentiment/result.txt")

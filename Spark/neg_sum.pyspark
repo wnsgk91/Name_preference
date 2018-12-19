@@ -1,0 +1,6 @@
+rdd = sc.textFile("/sentiment/result.txt/*")
+neg_sum = rdd.map(lambda line:line.split(",")[1])\
+		.map(lambda line:line.split("="))\
+		.map(lambda x: (x[0], float(x[1])))\
+		.reduceByKey(lambda v1, v2 : v1+v2)
+

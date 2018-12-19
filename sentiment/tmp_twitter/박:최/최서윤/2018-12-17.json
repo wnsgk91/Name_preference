@@ -1,0 +1,67 @@
+[{
+  "id": "1074708314905182208",
+  "permalink": "",
+  "username": "라니",
+  "text": "RT @bulyaneng: 최서윤은 개인 항목이 따로 있다.. 이요언 캐릭터 개인 항목은 이게 마지막임 https://t.co/8LpvUMHEPP",
+  "date": "Mon Dec 17 16:50:04 +0000 2018",
+  "retweets": 1,
+  "favorites": 0,
+  "mentions": [
+    {
+      "screen_name": "bulyaneng",
+      "name": "앗넹",
+      "id": 4124525114,
+      "id_str": "4124525114",
+      "indices": [
+        3,
+        13
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1074705006584942594",
+  "permalink": "",
+  "username": "앗넹",
+  "text": "최서윤은 개인 항목이 따로 있다.. 이요언 캐릭터 개인 항목은 이게 마지막임 https://t.co/8LpvUMHEPP",
+  "date": "Mon Dec 17 16:36:55 +0000 2018",
+  "retweets": 1,
+  "favorites": 1,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1074658840681930757",
+  "permalink": "",
+  "username": "앗넹",
+  "text": "님들 최서윤 보세요 재밌음 https://t.co/FCG2hAQ9Yx",
+  "date": "Mon Dec 17 13:33:28 +0000 2018",
+  "retweets": 0,
+  "favorites": 15,
+  "mentions": [],
+  "hashtags": [],
+  "geo": null
+},{
+  "id": "1074657681044951040",
+  "permalink": "",
+  "username": "【🙏멘틧흔적🙏】♧Tae_Tae♧",
+  "text": "@ldhldh_626 ....저기..누구세요..?귀여미라니요..?저는 최서윤인데요..?",
+  "date": "Mon Dec 17 13:28:51 +0000 2018",
+  "retweets": 0,
+  "favorites": 1,
+  "mentions": [
+    {
+      "screen_name": "ldhldh_626",
+      "name": "{잠깐만 비공}태태태탵💝",
+      "id": 1006519512127111168,
+      "id_str": "1006519512127111168",
+      "indices": [
+        0,
+        11
+      ]
+    }
+  ],
+  "hashtags": [],
+  "geo": null
+}]
